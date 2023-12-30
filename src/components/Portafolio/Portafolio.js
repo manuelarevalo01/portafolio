@@ -1,10 +1,10 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
-import imageHuawei from "../../assets/souces/huawei-logo.jpg";
-import imageUnipaz from "../../assets/souces/Unipaz.jpeg";
-import imageColMonseñor from "../../assets/souces/ColMonseñor.jpeg";
-import imageGuaneEnterprises from "../../assets/souces/guane enterpises.png";
+import imageHuawei from "../../assets/Experiencia/huawei-logo.jpg";
+import imageUnipaz from "../../assets/Experiencia/Unipaz.jpeg";
+import imageColMonseñor from "../../assets/Experiencia/ColMonseñor.jpeg";
+import imageGuaneEnterprises from "../../assets/Experiencia/guane enterpises.png";
 import imageBanner from "../../assets/DSC_0088.JPG";
 import Footer from "../Footer/Footer";
 import "../../App.css";

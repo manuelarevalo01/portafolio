@@ -1,8 +1,8 @@
 import React from "react";
-import gitBanner from "../assets/Tiendas/gitBanner.jpeg";
-import instalationGit from "../assets/Tiendas/intalacionGit.png";
-import instalacionGit from "../assets/Tiendas/instalacionGit.png";
-import empecemosGit from "../assets/Tiendas/empecemosGit.png";
+import gitBanner from "../assets/Blogs/gitBanner.jpeg";
+import instalationGit from "../assets/Blogs/intalacionGit.png";
+import instalacionGit from "../assets/Blogs/instalacionGit.png";
+import empecemosGit from "../assets/Blogs/empecemosGit.png";
 import Footer from "../../src/components/Footer/Footer";
 import "../App";
 

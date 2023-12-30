@@ -28,7 +28,7 @@ class Curriculum extends React.Component {
                 <iframe
                   title="Curriculum"
                   src="https://drive.google.com/file/d/1K4cbMGzqwUuTMQxIf--9cdR97yYA9Rn4/preview"
-                  width="740"
+                  width="500"
                   height="800"
                   frameborder="0"
                   marginheight="0"

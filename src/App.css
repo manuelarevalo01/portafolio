@@ -620,13 +620,13 @@ a.underlined:hover {
   font-weight: bold;
 }
 .register-item-title {
-font-size: 25px;
-    margin-left: 0;
-    text-align: center;
-    width: 100%;
-    color: #efb810;
+  font-size: 25px;
+  margin-left: 0;
+  text-align: center;
+  width: 100%;
+  color: #efb810;
 }
-.register-item-subtext{
+.register-item-subtext {
   font-size: 20px;
   padding: 35px 15px 70px;
   text-align: justify;
@@ -784,18 +784,18 @@ font-size: 25px;
   font-size: 16px;
   font-family: "Poppins", sans-serif !important;
 }
-.blog-link{
+.blog-link {
   text-decoration: none;
   color: blue !important;
 }
-.txt-parragra{
+.txt-parragra {
   font-size: 20px;
-    width: 60%;
-    color: #3d3d3d;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    margin: 20px;
+  width: 60%;
+  color: #3d3d3d;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin: 20px;
 }
 .tar-store {
   align-items: center;
@@ -850,15 +850,18 @@ hr {
     align-items: center;
     justify-content: center;
   }
-  .navbar-toggler {
-    display: none;
-  }
+
   .logo-content-left__text {
     font-size: 20px;
   }
   .navbar-nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+  }
+  .txt-parragra {
+    font-size: 15px;
+    width: 60%;
+    margin: 10px;
   }
   .content-banner-container {
     display: flex;
@@ -878,9 +881,6 @@ hr {
   }
   .txt-subtitle {
     font-size: 17px;
-  }
-  .content-whatsApp {
-    width: 150px;
   }
   .txt-wsp {
     font-size: 12px;
@@ -926,16 +926,22 @@ hr {
     margin-bottom: 0;
   }
   .content-ourProduct-txt-title {
-    font-size: 30px;
+    font-size: 25px;
   }
   .content-ourProduct-txt-subtitle {
     font-size: 15px;
+    width: 80%;
+  }
+  .txt-badged-content {
+    margin-bottom: 30rem;
+    margin-left: 15rem;
   }
   .items-content-ourProduct-card {
     height: 30rem;
   }
   .item-subtext {
     padding: 30px 0px 30px;
+    font-size: 15px;
   }
   .content-ourProduct-card {
     display: flex;
@@ -947,13 +953,13 @@ hr {
     flex-direction: column;
   }
   .image-content {
-    width: 200px;
+    width: 100px;
   }
   .image-content_item {
-    width: 170px;
+    width: 100px;
   }
   .item-text {
-    font-size: 30px;
+    font-size: 20px;
     padding-top: 50px;
   }
   .content-consultant {
@@ -961,7 +967,12 @@ hr {
     margin: 40px 0px 40px;
   }
   .text-support {
+    display: flex;
     font-size: 18px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .subtextSupport {
     font-size: 15px;
@@ -987,7 +998,261 @@ hr {
     color: #fff;
     text-align: center;
     line-height: 20px;
-    background-color: #565656;
+    background-color: #383838;
+  }
+  .item-footer {
+    font-size: 13px;
+    font-weight: 200;
+    padding: 0px;
+  }
+  .copyright-footer {
+    font-size: 12px;
+    min-width: 420px;
+    font-weight: 200;
+    padding-bottom: 0;
+    background-color: #383838;
+  }
+  .wsp-content {
+    margin-right: 10px;
+  }
+  .content-prices-container {
+    min-width: 420px;
+  }
+  .item-grid-plan {
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    gap: 2rem;
+  }
+  .item-grid-paymet {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .register-content-container {
+    min-width: 460px;
+  }
+  .register-title {
+    font-size: 20px;
+  }
+  .items-content-register {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .register-logo {
+    width: 30%;
+    right: 0px;
+    overflow: hidden;
+    position: relative;
+    bottom: 0px;
+  }
+  .item-register-left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .register-content-container {
+    min-width: 420px;
+  }
+  .txt-subtitle-store {
+    text-align: center;
+    width: 50%;
+  }
+  .grid-stores {
+    margin-top: 30px;
+    width: 80%;
+    align-items: center;
+    display: flex;
+    grid-gap: 2rem;
+    gap: 2rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 500px) {
+  .navbar {
+    width: 100%;
+    min-width: 420px;
+  }
+  .nav-item {
+    width: 4rem;
+  }
+  .nav-link {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-title-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .txt-parragra {
+    font-size: 16px;
+    width: 60%;
+    margin: 10px;
+  }
+  .navbar > .container-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-content-left__text {
+    font-size: 20px;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-banner-container {
+    display: flex;
+    width: 100%;
+    min-width: 420px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-banner {
+    min-width: 420px;
+  }
+  .image-banner {
+    width: 190px;
+  }
+  .txt-title {
+    font-size: 25px;
+  }
+  .txt-subtitle {
+    font-size: 17px;
+  }
+  .txt-wsp {
+    font-size: 12px;
+  }
+  .logo-whatsapp {
+    height: 22px;
+    width: 22px;
+  }
+  .txt-title-prices {
+    font-size: 18px;
+  }
+  .card-price-span {
+    font-size: 25px;
+  }
+  .card-data-plan {
+    font-size: 14px;
+  }
+  .txt-item-prices {
+    font-size: 14px;
+  }
+  .btn-empren {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 10px;
+  }
+  .txt-subtitle-prices {
+    font-size: 14px;
+  }
+  .text-payments {
+    font-size: 18px;
+  }
+  .description-payments {
+    font-size: 15px;
+  }
+  .content-grid {
+    padding: 20px;
+  }
+  .card-title {
+    font-size: 18px;
+  }
+  .content-ourProduct {
+    min-width: 420px;
+    padding-top: 50px;
+  }
+  .content-ourProduct-title {
+    margin-bottom: 0;
+  }
+  .content-ourProduct-txt-title {
+    font-size: 20px;
+  }
+  .content-ourProduct-txt-subtitle {
+    font-size: 15px;
+    text-align: center;
+  }
+  .txt-badged-content {
+    margin-bottom: 30rem;
+    margin-left: 15rem;
+  }
+  .items-content-ourProduct-card {
+    height: 30rem;
+  }
+  .item-subtext {
+    padding: 30px 0px 30px;
+  }
+  .content-ourProduct-card {
+    display: flex;
+    height: 100%;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .image-content {
+    width: 120px;
+  }
+  .image-content_item {
+    width: 120px;
+  }
+  .item-text {
+    font-size: 20px;
+    padding-top: 50px;
+  }
+  .content-consultant {
+    min-width: 420px;
+    margin: 40px 0px 40px;
+  }
+  .text-support {
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+  }
+  .subtextSupport {
+    font-size: 15px;
+    width: 100%;
+  }
+  .buttonSupport {
+    padding: 10px 10px;
+  }
+  .social a {
+    display: inline-block;
+    margin-right: 12px;
+    transition: opacity 0.05s ease;
+  }
+  .social .icon {
+    width: 25px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    min-width: 420px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    background-color: #383838;
   }
   .item-footer {
     font-size: 13px;
@@ -1057,7 +1322,7 @@ hr {
   }
   .txt-subtitle-store {
     text-align: center;
-    width: 50%;
+    width: 80%;
   }
   .grid-stores {
     margin-top: 30px;
@@ -1070,7 +1335,7 @@ hr {
     flex-direction: column;
   }
 }
-@media only screen and (min-width: 360px) and (max-width: 1020px) {
+@media only screen and (min-width: 475px) and (max-width: 1024px) {
   .navbar {
     width: 100%;
     min-width: 420px;
@@ -1092,25 +1357,14 @@ hr {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
-    justify-content: center;
-  }
-  .navbar-toggler {
-    display: none;
-  }
-  .collapse:not(.show) {
-    display: flex;
-    justify-content: center;
-  }
-  .collapse:not(.show) {
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   .logo-content-left__text {
     font-size: 20px;
   }
   .navbar-nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .content-banner-container {
     display: flex;
@@ -1118,6 +1372,11 @@ hr {
     min-width: 420px;
     flex-direction: column;
     align-items: center;
+  }
+  .txt-parragra {
+    font-size: 16px;
+    width: 60%;
+    margin: 10px;
   }
   .content-banner {
     min-width: 420px;
@@ -1131,9 +1390,7 @@ hr {
   .txt-subtitle {
     font-size: 17px;
   }
-  .content-whatsApp {
-    width: 150px;
-  }
+
   .txt-wsp {
     font-size: 12px;
   }
@@ -1160,6 +1417,10 @@ hr {
   }
   .txt-subtitle-prices {
     font-size: 14px;
+  }
+  .txt-badged-content {
+    margin-bottom: 30rem;
+    margin-left: 30rem;
   }
   .text-payments {
     font-size: 18px;
@@ -1202,10 +1463,10 @@ hr {
     flex-direction: column;
   }
   .image-content {
-    width: 200px;
+    width: 130px;
   }
   .image-content_item {
-    width: 170px;
+    width: 130px;
   }
   .item-text {
     font-size: 30px;
@@ -1239,10 +1500,11 @@ hr {
     font-size: 10px;
     min-width: 420px;
     padding: 20px;
+    width: 100%;
     color: #fff;
     text-align: center;
     line-height: 20px;
-    background-color: #565656;
+    background-color: #383838;
   }
   .item-footer {
     font-size: 13px;
@@ -1252,6 +1514,7 @@ hr {
   .copyright-footer {
     font-size: 12px;
     min-width: 420px;
+    width: 100%;
     font-weight: 200;
     padding-bottom: 0;
   }

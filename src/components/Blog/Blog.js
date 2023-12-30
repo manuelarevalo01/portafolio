@@ -2,15 +2,15 @@ import React from "react";
 import "../../App.css";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
-import varjo from "../../assets/Tiendas/git.png";
-import varjoStore from "../../assets/Tiendas/gitBanner.jpeg";
+import git from "../../assets/Blogs/git.png";
+import gitBanner from "../../assets/Blogs/gitBanner.jpeg";
 
-function Varjo() {
-  return <img src={varjo} alt="varjo" className="image-top" />;
+function Git() {
+  return <img src={git} alt="git" className="image-top" />;
 }
 
-function VarjoStore() {
-  return <img src={varjoStore} alt="varjoStore" className="image-store" />;
+function GitBanner() {
+  return <img src={gitBanner} alt="gitBanner" className="image-store" />;
 }
 
 class Blog extends React.Component {
@@ -20,12 +20,12 @@ class Blog extends React.Component {
         <div className="register-content">
           <h1 class="txt-title-prices">Navegando por el Desarrollo Web</h1>
           <p className="txt-subtitle-prices">
-            Bienvenido!, tu destino definitivo para explorar el emocionante
-            mundo del desarrollo web. Desde las últimas tendencias en diseño
-            hasta consejos prácticos de codificación, este blog está diseñado
-            para inspirar a desarrolladores y entusiastas del desarrollo web.
-            Únete conmigo en este viaje digital, donde desglosaremos tecnologías
-            emergentes, compartiremos trucos valiosos.
+            Bienvenido! Explora el emocionante mundo del desarrollo web. Aca
+            encontraras desde las últimas tendencias en diseño, hasta consejos
+            prácticos de codificación, este blog está diseñado para inspirar a
+            desarrolladores y entusiastas del desarrollo web. Únete conmigo en
+            este viaje digital, donde desglosaremos tecnologías emergentes y
+            compartiremos trucos valiosos.
           </p>
           <hr></hr>
           <div className="content-tiendas">
@@ -33,12 +33,12 @@ class Blog extends React.Component {
               <div className="item-for-grid">
                 <div className="select-a-hov">
                   <div className="txt-store-top">
-                    <Varjo></Varjo>
+                    <Git></Git>
                     <p className="txt-store-lg">¿Qué es Git?</p>
                   </div>
                   <div className="hover12">
                     <figure className="figur-item">
-                      <VarjoStore></VarjoStore>
+                      <GitBanner></GitBanner>
                     </figure>
                     <Link className="item-txt-iner tar-store" to="/git">
                       <p className="buttonSupport">Ir a leer más</p>

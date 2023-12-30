@@ -23,7 +23,7 @@ class Contactame extends React.Component {
                 <iframe
                   title="register-form"
                   src="https://forms.gle/a5xSLgtLRdwYgNTJ8"
-                  width="740"
+                  width="500"
                   height="800"
                   frameborder="0"
                   marginheight="0"
