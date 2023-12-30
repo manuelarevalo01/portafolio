@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.601c5b56.css",
+    "main.js": "/static/js/main.6ffd702b.js",
+    "static/media/instalacionGit.png": "/static/media/instalacionGit.dee3c46cf3ec7c0680e5.png",
+    "static/media/IBMPlexSans-MediumItalic.ttf": "/static/media/IBMPlexSans-MediumItalic.b5d2aae060bd17a44e92.ttf",
+    "static/media/IBMPlexSans-BoldItalic.ttf": "/static/media/IBMPlexSans-BoldItalic.2154ceb10b0ff9a38ed6.ttf",
+    "static/media/IBMPlexSans-Italic.ttf": "/static/media/IBMPlexSans-Italic.3c841fd3d99ee585c6cd.ttf",
+    "static/media/IBMPlexSans-Medium.ttf": "/static/media/IBMPlexSans-Medium.e1777542474b207f1248.ttf",
+    "static/media/IBMPlexSans-Regular.ttf": "/static/media/IBMPlexSans-Regular.0519459d8ed646e0f90d.ttf",
+    "static/media/IBMPlexSans-Bold.ttf": "/static/media/IBMPlexSans-Bold.c6aebfe2ea10a16d4a22.ttf",
+    "static/media/DSC_0088.JPG": "/static/media/DSC_0088.3cfc9a4d039ae1ba51c8.JPG",
+    "static/media/5137843.jpg": "/static/media/5137843.f0648da17fb96060e23e.jpg",
+    "static/media/huawei-logo.jpg": "/static/media/huawei-logo.6d229b5119ad73aab713.jpg",
+    "static/media/gitBanner.jpeg": "/static/media/gitBanner.65d137aca9cb17201b84.jpeg",
+    "static/media/portafolio.png": "/static/media/portafolio.439fb0a6848d0c2ae9f7.png",
+    "static/media/empecemosGit.png": "/static/media/empecemosGit.4c04856a621a14022b18.png",
+    "static/media/git.png": "/static/media/git.520074409da005730b37.png",
+    "static/media/icons8-linkedin.svg": "/static/media/icons8-linkedin.cbd44c6b10b24faa22f1045865368dc0.svg",
+    "static/media/instagram.svg": "/static/media/instagram.b133e565e26031a4181b82e6a67d7c65.svg",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.681a24bac6ce67ef84bbff6285b8d751.svg",
+    "index.html": "/index.html",
+    "static/media/github.svg": "/static/media/github.0cbd66d999737e5f7b16c61e1cf574dd.svg",
+    "static/media/icons8-twitterx.svg": "/static/media/icons8-twitterx.8f8dd8b68ebd953e9501d7b63112e23f.svg",
+    "static/media/gmail.svg": "/static/media/gmail.f12319849e28413aaa94f1c11fd35eef.svg",
+    "main.601c5b56.css.map": "/static/css/main.601c5b56.css.map",
+    "main.6ffd702b.js.map": "/static/js/main.6ffd702b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.601c5b56.css",
+    "static/js/main.6ffd702b.js"
+  ]
+}
