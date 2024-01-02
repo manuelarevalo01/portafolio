@@ -3,6 +3,17 @@ import Footer from "../Footer/Footer";
 import "../../App.css";
 
 class Curriculum extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true,
+    };
+  }
+  hideSpinner = () => {
+    this.setState({
+      loading: false,
+    });
+  };
   render = () => {
     return (
       <div className="content-prices-container">
@@ -24,18 +35,33 @@ class Curriculum extends React.Component {
                   aportar a tu equipo comienza aquí!
                 </p>
                 <hr></hr>
-                <div >
-                <iframe
-                  title="Curriculum"
-                  src="https://drive.google.com/file/d/1K4cbMGzqwUuTMQxIf--9cdR97yYA9Rn4/preview"
-                  width="500"
-                  height="800"
-                  frameborder="0"
-                  marginheight="0"
-                  marginwidth="0"
+                <div
+                  style={{ height: "600px", margin: "10px", display: "flex" }}
                 >
-                  Loading…
-                </iframe>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexDirection: "column",
+                    }}
+                  >
+                    {this.state.loading && <div className="spinner"></div>}
+
+                    <iframe
+                      title="Curriculum"
+                      src="https://drive.google.com/file/d/1K4cbMGzqwUuTMQxIf--9cdR97yYA9Rn4/preview"
+                      width="500"
+                      height="600"
+                      frameborder="0"
+                      onLoad={this.hideSpinner}
+                      style={{
+                        display: this.state.loading ? "none" : "flex",
+                      }}
+                    >
+                      Loading…
+                    </iframe>
+                  </div>
                 </div>
               </div>
             </div>

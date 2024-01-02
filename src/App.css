@@ -11,6 +11,12 @@
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.3);
 }
+.item-register-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .content-banner {
   margin: auto;
   min-height: 512px;
@@ -825,6 +831,23 @@ a.underlined:hover {
 }
 hr {
   width: 70%;
+}
+.spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #efb810;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media only screen and (min-width: 280px) and (max-width: 375px) {
   .navbar {

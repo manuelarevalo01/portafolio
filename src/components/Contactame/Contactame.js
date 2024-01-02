@@ -1,7 +1,21 @@
 import React from "react";
 import "../../App.css";
 import Footer from "../Footer/Footer";
+
 class Contactame extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true,
+    };
+  }
+
+  hideSpinner = () => {
+    this.setState({
+      loading: false,
+    });
+  };
+
   render = () => {
     return (
       <div className="register-content-container">
@@ -19,15 +33,18 @@ class Contactame extends React.Component {
                   la conversación y explorar cómo puedo apoyarte.
                 </h3>
               </div>
-              <div className="item-register-left">
+              <div className="item-register-right">
+                {this.state.loading && <div className="spinner"></div>}
                 <iframe
                   title="register-form"
                   src="https://forms.gle/a5xSLgtLRdwYgNTJ8"
                   width="500"
-                  height="800"
+                  height="600"
                   frameborder="0"
-                  marginheight="0"
-                  marginwidth="0"
+                  onLoad={this.hideSpinner}
+                  style={{
+                    display: this.state.loading ? "none" : "flex",
+                  }}
                 >
                   Loading…
                 </iframe>
@@ -40,4 +57,5 @@ class Contactame extends React.Component {
     );
   };
 }
+
 export default Contactame;
