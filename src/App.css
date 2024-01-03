@@ -19,7 +19,7 @@
 }
 .content-banner {
   margin: auto;
-  min-height: 512px;
+  min-height: 7s12px;
   max-width: 1300px;
   width: 100%;
   background-repeat: no-repeat;
@@ -220,12 +220,37 @@
   width: 50%;
   justify-content: center;
   align-items: center;
+  padding: 5rem 0 0 0;
 }
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+}
+
 .image-banner {
   width: 40%;
   height: 40%;
   border-radius: 100%;
   border: solid 5px white;
+  -webkit-animation: slide-top 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s
+    both;
+  animation: slide-top 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s both;
 }
 .image-content {
   width: 150px;
@@ -862,6 +887,23 @@ hr {
     display: flex;
     justify-content: center;
   }
+  .spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #efb810;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   .nav-title-link {
     display: flex;
     justify-content: center;
@@ -1106,6 +1148,23 @@ hr {
   }
 }
 @media only screen and (min-width: 360px) and (max-width: 500px) {
+  .spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #efb810;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   .navbar {
     width: 100%;
     min-width: 420px;
@@ -1359,6 +1418,23 @@ hr {
   }
 }
 @media only screen and (min-width: 475px) and (max-width: 1024px) {
+  .spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #efb810;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   .navbar {
     width: 100%;
     min-width: 420px;
