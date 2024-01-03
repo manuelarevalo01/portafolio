@@ -53,7 +53,6 @@ class Curriculum extends React.Component {
                       src="https://drive.google.com/file/d/1K4cbMGzqwUuTMQxIf--9cdR97yYA9Rn4/preview"
                       width="500"
                       height="600"
-                      frameborder="0"
                       onLoad={this.hideSpinner}
                       style={{
                         display: this.state.loading ? "none" : "flex",

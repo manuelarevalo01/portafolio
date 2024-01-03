@@ -40,7 +40,6 @@ class Contactame extends React.Component {
                   src="https://forms.gle/a5xSLgtLRdwYgNTJ8"
                   width="500"
                   height="600"
-                  frameborder="0"
                   onLoad={this.hideSpinner}
                   style={{
                     display: this.state.loading ? "none" : "flex",
