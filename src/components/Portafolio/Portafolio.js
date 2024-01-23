@@ -1,7 +1,6 @@
 import React, { useRef, useEffect  } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FaMailBulk, FaRegArrowAltLeft, FaRegArrowAltRight, FaYarn } from "react-icons/fa";
 /* import { useGSAP } from "@gsap/react"; */
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
