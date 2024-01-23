@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect  } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import { FaMailBulk, FaRegArrowAltLeft, FaRegArrowAltRight, FaYarn } from "react-icons/fa";
+/* import { useGSAP } from "@gsap/react"; */
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 import imageHuawei from "../../assets/Experiencia/huawei-logo.jpg";
@@ -41,7 +42,7 @@ function ImageGuaneEnterprises() {
 }
 
 const Portafolio = () => {
-  const main = useRef();
+ /*  const main = useRef();
   const scrollTween = useRef();
   const { contextSafe } = useGSAP(
     () => {
@@ -73,10 +74,34 @@ const Portafolio = () => {
       onComplete: () => (scrollTween.current = null),
       overwrite: true,
     });
-  });
+  }); */
+  const consultantRef = useRef(null);
+
+ useEffect(() => {
+  if (consultantRef.current) {
+    const consultantElement = consultantRef.current;
+    gsap.fromTo(
+      consultantElement,
+      {
+        scale: 1,
+      },
+      {
+        scale: 1.4,
+        scrollTrigger: {
+          trigger: consultantElement,
+          end: "bottom bottom",
+          scrub: 1,
+          toggleActions: "restart none none reverse"
+        },
+      }
+    );
+  }
+}, []);
+
+
 
   return (
-    <main className="content-banner-container" ref={main}>
+    <main className="content-banner-container" /* ref={main} */>
       <section className="content-banner">
         <div className="items-content-banner">
           <div className="item-content-right">
@@ -241,7 +266,7 @@ const Portafolio = () => {
             profesionales.
           </p>
           <a href="mailto:manferare1@gmail.com">
-            <button className="buttonSupport">Conéctate conmigo</button>
+            <button className="buttonSupport" ref={consultantRef}>Conéctate conmigo</button>
           </a>
         </div>
       </section>
