@@ -11,15 +11,6 @@
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.3);
 }
-@keyframes scale-up {
-	to { scale: 1.2; }
-}
-@keyframes fade-away {
-	to { opacity: 0; }
-}
-section {
-	view-timeline: --scroll;
-}
 .item-register-right {
   display: flex;
   justify-content: center;
@@ -42,10 +33,6 @@ section {
   align-items: center;
   justify-content: center;
   opacity: 0.85;
-  animation: scale-up both ease-in-out,
-  fade-away both linear;
-	animation-timeline: --scroll;
-	animation-range: exit 20% exit 90%;
 }
 .nav-link:hover {
   border-bottom: solid 2px black;
@@ -281,12 +268,6 @@ section {
   padding-top: 100px;
   max-width: 1300px;
   margin: auto;
-  animation:
-  fade-away both linear;
-animation-timeline: --scroll;
-animation-range:
-		exit 0% exit 100%,
-		exit 50% exit 90%;	
 }
 .content-ourProduct-title {
   margin-bottom: 100px;
