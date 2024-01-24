@@ -1,4 +1,4 @@
-import React, { useRef, useEffect  } from "react";
+import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 /* import { useGSAP } from "@gsap/react"; */
@@ -41,67 +41,121 @@ function ImageGuaneEnterprises() {
 }
 
 const Portafolio = () => {
- /*  const main = useRef();
-  const scrollTween = useRef();
-  const { contextSafe } = useGSAP(
-    () => {
-      const panels = gsap.utils.toArray(".panel");
-      panels.forEach((panel, i) => {
-        ScrollTrigger.create({
-          trigger: panel,
-          start: "top bottom",
-          end: "+=200%",
-          onToggle: (self) =>
-            self.isActive && !scrollTween.current && goToSection(i),
-          id: "panel-" + i,
-        });
-      });
-      ScrollTrigger.create({
-        start: 0,
-        end: "max",
-        snap: 1 / (panels.length - 1),
-      });
-    },
-    { scope: main }
-  );
+  const contentBannerRef = useRef(null);
+  const contentOurProductRef = [];
+  const contentConsultantRef = useRef(null);
 
-  const goToSection = contextSafe((i) => {
-    scrollTween.current = gsap.to(window, {
-      scrollTo: { y: i * window.innerHeight, autoKill: false },
-      duration: 1,
-      id: "scrollTween",
-      onComplete: () => (scrollTween.current = null),
-      overwrite: true,
-    });
-  }); */
   const consultantRef = useRef(null);
 
- useEffect(() => {
-  if (consultantRef.current) {
-    const consultantElement = consultantRef.current;
-    gsap.fromTo(
-      consultantElement,
-      {
-        scale: 1,
-      },
-      {
-        scale: 1.4,
-        scrollTrigger: {
-          trigger: consultantElement,
-          end: "bottom bottom",
-          scrub: 1,
-          toggleActions: "restart none none reverse"
+  useEffect(() => {
+    if (consultantRef.current) {
+      const consultantElement = consultantRef.current;
+      gsap.fromTo(
+        consultantElement,
+        {
+          scale: 1,
         },
-      }
-    );
-  }
-}, []);
-
-
+        {
+          scale: 1.4,
+          scrollTrigger: {
+            trigger: consultantElement,
+            end: "bottom bottom",
+            scrub: 1,
+            toggleActions: "restart none none reverse",
+          },
+        }
+      );
+    }
+    if (contentBannerRef.current) {
+      gsap.fromTo(
+        contentBannerRef.current,
+        { opacity: 0.85, scale: 1 },
+        {
+          opacity: 0.1,
+          scale: 0.8,
+          scrollTrigger: {
+            trigger: contentBannerRef.current,
+            start: "bottom center",
+            end: "+=100vh",
+            scrub: 1,
+            toggleActions: "restart none none reverse",
+          },
+        }
+      );
+    }
+    if (contentOurProductRef[0]) {
+      gsap.fromTo(
+        contentOurProductRef[0],
+        { opacity: 0.85, scale: 1 },
+        {
+          opacity: 0.1,
+          scale: 0.8,
+          scrollTrigger: {
+            trigger: contentOurProductRef[0],
+            start: "bottom center",
+            end: "+=100vh",
+            scrub: 1,
+            toggleActions: "restart none none reverse",
+          },
+        }
+      );
+    }
+    if (contentOurProductRef[1]) {
+      gsap.fromTo(
+        contentOurProductRef[1],
+        { opacity: 0.85, scale: 1 },
+        {
+          opacity: 0.1,
+          scale: 0.8,
+          scrollTrigger: {
+            trigger: contentOurProductRef[1],
+            start: "bottom center",
+            end: "+=100vh",
+            scrub: 1,
+            toggleActions: "restart none none reverse",
+          },
+        }
+      );
+    }
+    if (contentOurProductRef[2]) {
+      gsap.fromTo(
+        contentOurProductRef[2],
+        { opacity: 0.85, scale: 1 },
+        {
+          opacity: 0.1,
+          scale: 0.8,
+          scrollTrigger: {
+            trigger: contentOurProductRef[2],
+            start: "bottom center",
+            end: "+=100vh",
+            scrub: 1,
+            toggleActions: "restart none none reverse",
+          },
+        }
+      );
+    }
+    if (contentConsultantRef.current) {
+      gsap.fromTo(
+        contentConsultantRef.current,
+        { scale: 1 },
+        {
+          scale: 1.1,
+          scrollTrigger: {
+            trigger: contentConsultantRef.current,
+            end: "bottom bottom",
+            scrub: 1,
+            toggleActions: "restart none none reverse",
+          },
+        }
+      );
+    }
+    ScrollTrigger.refresh();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <main className="content-banner-container" /* ref={main} */>
-      <section className="content-banner">
+      <section className="content-banner" ref={contentBannerRef}>
         <div className="items-content-banner">
           <div className="item-content-right">
             <picture className="item-content-picture">
@@ -163,7 +217,10 @@ const Portafolio = () => {
           </p>
         </div>
         <div className="content-ourProduct-card">
-          <div className="items-content-ourProduct">
+          <div
+            className="items-content-ourProduct"
+            ref={(el) => (contentOurProductRef[0] = el)}
+          >
             <div className="items-content-ourProduct-card">
               <p className="item-circle-id">
                 <ImageHuawei className="logo" />
@@ -183,7 +240,10 @@ const Portafolio = () => {
               </div>
             </div>
           </div>
-          <div className="items-content-ourProduct">
+          <div
+            className="items-content-ourProduct"
+            ref={(el) => (contentOurProductRef[1] = el)}
+          >
             <div className="items-content-ourProduct-card">
               <p className="item-circle-id">
                 <ImageColMonseñor className="logo" />
@@ -202,7 +262,10 @@ const Portafolio = () => {
               </div>
             </div>
           </div>
-          <div className="items-content-ourProduct">
+          <div
+            className="items-content-ourProduct"
+            ref={(el) => (contentOurProductRef[2] = el)}
+          >
             <div className="items-content-ourProduct-card">
               <p className="item-circle-id">
                 <ImageUnipaz className="logo" />
@@ -252,7 +315,10 @@ const Portafolio = () => {
           </div>
         </div>
       </section>
-      <section className="content-consultant support">
+      <section
+        className="content-consultant support"
+        ref={contentConsultantRef}
+      >
         <div className="items-consultant">
           <p className="text-support">
             <span className="text-support_subtitle">
@@ -265,7 +331,9 @@ const Portafolio = () => {
             profesionales.
           </p>
           <a href="mailto:manferare1@gmail.com">
-            <button className="buttonSupport" ref={consultantRef}>Conéctate conmigo</button>
+            <button className="buttonSupport" ref={consultantRef}>
+              Conéctate conmigo
+            </button>
           </a>
         </div>
       </section>
